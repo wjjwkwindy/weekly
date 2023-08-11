@@ -1,0 +1,41 @@
+:root {
+    --accent: 228, 245, 108;
+    --accent-light: 224, 204, 250;
+    --accent-dark: 49, 10, 101;
+    /* --green: #ddf247; */
+    /* --green-middle: #e4f56c; */
+    /* --green-light: #eef7ab; */
+    
+    --green-600: #ddf247ff;
+    --green-500: #e3f466ff;
+    --green-400: #e8f684ff;
+    --green-300: #eef9a3ff;
+    --green-200: #f4fbc2ff;
+    --green-100: #f9fde0ff;
+
+    --accent-gradient: linear-gradient(
+        45deg,
+        var(--green-600),
+        var(--green-100) 30%,
+        white 60%
+    );
+}
+html {
+    font-family: system-ui, sans-serif;
+    background: #13151a;
+    background-size: 224px;
+}
+code {
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+        DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
