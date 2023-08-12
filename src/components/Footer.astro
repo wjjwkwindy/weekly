@@ -1,0 +1,124 @@
+---
+import { Icon } from "astro-icon";
+---
+
+<footer class="footer">
+    <div class="container footer-container">
+        <div class="footer-top">
+            <div class="footer-top-container">
+                <img src="/logo.png" />
+            </div>
+        </div>
+        <div class="footer-left">
+            <div class="copyright">
+                <Icon name="ph:copyright" class="icon-copyright" />
+                <span>2023 Oxidize Weekly - MIT</span>
+                <div>
+                    <Icon name="simple-icons:astro" class="icon-astro" />
+                    <Icon name="akar-icons:vercel-fill" class="icon-vercel" />
+                </div>
+            </div>
+        </div>
+        <div class="footer-center">
+            <div class="footer-center-text">
+                <Icon name="fluent:cursor-click-20-regular" /><span
+                    >总浏览量 1000</span
+                >
+            </div>
+            <div class="footer-center-text">
+                <Icon name="fluent:person-question-mark-16-regular" />
+                <span>最近访客来自 CN</span>
+            </div>
+        </div>
+        <div class="footer-right">
+            <a href="https://github.com/wjjwkwindy/weekly" target="_blank">
+                <Icon name="mdi:github" />
+            </a>
+            <a href="#" target="_blank">
+                <Icon name="mdi:rss" />
+            </a>
+        </div>
+    </div>
+</footer>
+<style>
+    .footer {
+        border-top: 1px solid #444444;
+        position: relative;
+    }
+    .footer-container {
+        display: flex;
+        padding: 2rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer-top {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: -10px;
+        left: 0;
+        right: 0;
+        justify-content: center;
+    }
+    .footer-top-container {
+        display: inline-block;
+        background-color: var(--bg-black);
+        padding: 0 10px;
+    }
+    .footer-top img {
+        width: 20px;
+    }
+    .footer-center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .footer-center-text {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+    }
+    .footer-center-text span {
+        color: #eee;
+        font-size: 14px;
+    }
+    .footer-center-text svg {
+        width: 20px;
+    }
+    .footer-right svg {
+        width: 25px;
+        margin-left: 10px;
+    }
+    .icon-copyright {
+        width: 20px;
+        position: relative;
+        top: -1px;
+        margin-right: 5px;
+    }
+    .icon-astro {
+        width: 20px;
+        position: relative;
+        top: 1px;
+    }
+    .icon-vercel {
+        width: 17px;
+        position: relative;
+        top: -2px;
+    }
+    .copyright {
+        color: #eee;
+        display: flex;
+        align-items: center;
+    }
+    .copyright div {
+        display: inline-block;
+        margin-left: 10px;
+    }
+    [astro-icon] {
+        color: #eee;
+    }
+</style>
