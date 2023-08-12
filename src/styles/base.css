@@ -5,13 +5,15 @@
     /* --green: #ddf247; */
     /* --green-middle: #e4f56c; */
     /* --green-light: #eef7ab; */
-    
+
     --green-600: #ddf247ff;
     --green-500: #e3f466ff;
     --green-400: #e8f684ff;
     --green-300: #eef9a3ff;
     --green-200: #f4fbc2ff;
     --green-100: #f9fde0ff;
+
+    --bg-black: #13151a;
 
     --accent-gradient: linear-gradient(
         45deg,
@@ -22,7 +24,7 @@
 }
 html {
     font-family: system-ui, sans-serif;
-    background: #13151a;
+    background: var(--bg-black);
     background-size: 224px;
 }
 code {
